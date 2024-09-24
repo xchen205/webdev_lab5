@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Form</title>
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+</head>
 	<body>
 		<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
  			<fieldset>
@@ -21,12 +24,6 @@
 	  				<input type="email" id="email_field" name="email_field">
 	  			</div>
 	  			<div>
-	  			<label for="comments_field">Comments:</label>
-		  			<textarea id="comments_field" name="Comments" rows="4" cols="50">
-					Make yourself heard.
-					</textarea>
-	  			</div>
-	  			<div>
 	  			<label for="gender_field">Gender:</label>
 	  				<input type="radio" id="gender_field" name="gender_field" value="Male">
 						<label for="gender_field">Male</label>
@@ -36,6 +33,13 @@
 						<label for="gender_field">Other</label>
 					<input type="radio" id="gender_field" name="gender_field" value="No Answer">
 						<label for="gender_field">No Answer</label>
+	  			</div>
+	  			<div>
+	  			<label for="age_field">Age:</label>
+	  				<select id="age_field">
+		  				<option value="18+">18 or older</option>
+		  				<option value="under 18">not 18</option>
+					</select>
 	  			</div>
 	  			<div>
 	  			<label for="available_field[]">Available:</label>
@@ -55,11 +59,10 @@
 					<label for="sun"> Sunday</label><br>
 	  			</div>
 	  			<div>
-	  			<label for="age_field">Age:</label>
-	  				<select id="age_field">
-		  				<option value="18+">18 or older</option>
-		  				<option value="under 18">not 18</option>
-					</select>
+	  			<label for="comments_field">Comments:</label>
+		  			<textarea id="comments_field" name="Comments" rows="4" cols="50">
+					Make yourself heard.
+					</textarea>
 	  			</div>
 	  			<div>
 	  			<label for="hidden_field"></label>
